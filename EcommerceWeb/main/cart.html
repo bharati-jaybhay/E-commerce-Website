@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - Mystore</title>
+    <link rel="stylesheet" href="allcsscode.css">
+</head>
+<body>
+  
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" width="125px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="Main-page.html">Home</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Content</a></li>
+                <li><a href="Account.html">Account</a></li>
+            </ul>
+        </nav>
+        <img src="images/homee.png" width="40px" height="40px">
+        <img src="images/menus.png" class="menu-icon" onclick="menutoggle()">
+    </div>  
+</div>
+ 
+<!-- cart item details -->
+    <div class="small-cintainer cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>SubTotal</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/shirt1.jpg">
+                        <div>
+                            <p>Printed T-shirt</p>
+                            <small>Price :$ 150</small>
+                            <br>
+                            <a href="">Remove</a>
+                    </div>
+                </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$150</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/denim.jpg">
+                                <div>
+                            <p>Denim </p>
+                                <small>Price :$ 400</small><br>
+                            <a href="">Remove</a>
+                        </div>
+                        </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>$400</td>
+            </tr>
+            <tr>
+            <td>
+            <div class="cart-info">
+                <img src="images/earing.jpg">
+                                <div>
+                    <p>Diamond earings</p>
+                        <small>Price :$ 200</small><br>
+                    <a href="">Remove</a>
+                    </div>
+                </div>
+                </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$200</td>
+            </div>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$ 850</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>$ 50.00</td>
+                </tr>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$ 900</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row1">
+                <div class="footer-col1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/playstore.webp">
+                        <img src="images/applogo.png">
+                    </div>
+                </div>
+
+                <div class="footer-col2">
+                    <img src="images/logo.png" >
+                    <p>Our purpose is to Sustainability make the Pleasure and Benefits of All women's Products Accessible to many.</p> 
+                </div>
+
+                <div class="footer-col3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col4">
+                    <h3>Follow US</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copy">Copyright 2024 -Bharati jaybhay</p>
+        </div>
+    </div>
+
+    <!-- js for toggle menu -->
+
+    <script>
+        var MenuItems= document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight="0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight=="0px")
+                {MenuItems.style.maxHeight="200px";
+            }
+            else{
+                MenuItems.style.maxHeight="0px";
+            }
+        }
+    </script>
+</body>
+</html>
